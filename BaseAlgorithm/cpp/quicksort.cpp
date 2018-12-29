@@ -1,12 +1,5 @@
 ﻿#include "pch.h"
-#include <iostream>
-
-
-void swap(int *arr, int i, int j) {
-	int tmp = arr[i];
-	arr[i] = arr[j];
-	arr[j] = tmp;
-}
+#include "..\head\utils.h"
 
 int partition(int *arr, int left, int right) {
 	int pivot = left;
@@ -33,10 +26,4 @@ void quicksort(int *arr,int left,int right) {
 }
 
 
-int main()
-{
-	int a[] = { 5, 9, 7, 6, 4, 3, 8, 1,11,5 ,10 };
-	quicksort(a, 0, (sizeof(a) / sizeof(a[0]))-1);
-	for (int i=0 ;i< (sizeof(a) / sizeof(a[0]));i++)
-		std::cout << a[i]<<" "; 
-}
+
